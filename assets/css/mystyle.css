@@ -1,0 +1,176 @@
+body {
+	margin: 0;
+
+}
+.container a {
+	color: transparent;
+}
+.logo {
+	background: url("../images/logo.png") no-repeat center 16px;
+    height: 54px;
+    width: 110px;
+}
+.navbar {
+	background-color: #e7e7e7;
+	margin-bottom: 0;
+}
+.yes, .no, .recommend-text {
+	text-align: center;
+	padding: 0;
+}
+.recommend-text-container {
+	padding: 5px 0 !important;
+}
+.recommend-text {
+	font-size: 12px;
+}
+.recommend-text-likely {
+	float: right;
+}
+.yes-no-question-container label {
+	font-weight: 100;
+	padding: 1% 10%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.recommend label {
+	margin-right: 0;
+	font-weight: 100;
+	border-right: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	cursor: pointer;
+	width: 10%;
+	padding: 5px;
+	text-align: center;
+}
+.recommend input, .yes-no-question-container input {
+	margin-right: 1%;
+}
+.yes-no-question-container button {
+	background-color: #ccc;
+    width: 100%;
+    padding: 1%;
+    border-radius: 5px;
+}
+.arrow {
+	padding: 0;
+	color: #c7c7c7;
+    font-weight: 900;
+}
+.thanks-text {
+	text-align: center;
+    padding: 2%;
+    background-color: #f5962a;
+    color: black;
+    font-weight: 900;
+    box-shadow: 0 10px 10px #ccc;
+}
+.radio-buttons-container, .recommend-text-container {
+	background-color: #ccc;
+	padding: 0;
+}
+.yes-no-question-container input {
+	display: none;
+}
+.recommend input {
+    display: none;
+}
+.submit-button-container {
+	margin-top: 5%;
+}
+.submit-button-container input {
+	background-color: #f5962a;
+}
+.submit-button-container input:hover {
+	background-color: #f5962a;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+	.recommend input {
+		display: none;
+	}
+	.submit-button-container {
+		margin-left: 40px;
+	}
+	.submit-button-container input {
+		padding: 1% 8%;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.yes-no-question-container h3, .recommend h3 {
+		font-size: 20px;
+	}
+	.dont-display {
+		display: none;
+	}
+	.recommend input {
+		display: none;
+	}
+	.submit-button-container {
+		margin-left: 40px;
+	}
+	.submit-button-container input {
+		padding: 1% 8%;
+	}
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+	.yes-no-question-container h3, .recommend h3 {
+		font-size: 18px;
+	}
+	.recommend input {
+		display: none;
+	}
+	.dont-display1 {
+		display: none;
+	}
+	.arrow {
+		display: none;
+	}
+	.submit-button-container {
+		margin-left: 40px;
+	}
+	.submit-button-container input {
+		padding: 1% 6%;
+	}
+}
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+	.yes-no-question-container h3, .recommend h3 {
+		font-size: 16px;
+	}
+	.recommend input {
+		display: none;
+	}
+	.submit-button-container {
+		margin-left: 13%;
+	}
+	.submit-button-container input {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+	.yes-no-question-container h3, .recommend h3 {
+		font-size: 14px;
+	}
+	.recommend input {
+		display: none;
+	}
+	.submit-button-container {
+		margin-left: 14%;
+	}
+	.submit-button-container input {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 100px) and (max-width: 320px) {
+	.yes-no-question-container h3, .recommend h3 {
+		font-size: 14px;
+	}
+	.recommend input {
+		display: none;
+	}
+	.submit-button-container {
+		margin-left: 15%;
+	}
+	.submit-button-container input {
+		width: 100%;
+	}
+}

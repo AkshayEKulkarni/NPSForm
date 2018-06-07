@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="csrf-token" content="fBkRD38oXLsYuIxYjQcHCOh2oIHsMz2cGhLj4bKZ" /> -->
+    <title>
+      NPS Form
+    </title>
+        
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/mystyle.css">
+        
+  </head>
+
+  <body>
+    <div class="navbar navbar-default">
+         <div class="container col-md-12 col-sm-12 col-xs-12">
+            <a href="#">
+              <li class="logo"></li>
+            </a>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 thanks-text">
+          <p>Thanks in advace for taking a minute to give Becker your feedback so we can improve our offering to you.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <form action="#">
+      <ol class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+
+          <div class="col-md-12 col-sm-12 col-xs-12 yes-no-question-container yes-no-question-container1">
+            <h3><li>Has your account manager from Prione Business services contacted you?</li></h3>
+            <input type="radio" name="contacted" value="yes" id="yes"><label for="yes">Yes</label>
+            <input type="radio" name="contacted" value="no" id="no"><label for="no">No</label>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12 yes-no-question-container yes-no-question-container2">
+            <h3><li>Are you happy with the service?</li></h3>
+            <input type="radio" name="happy" value="yes" id="yes1"><label for="yes1">Yes</label>
+            <input type="radio" name="happy" value="no" id="no1"><label for="no1">No</label>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12 recommend">
+            <h3><li>How likely are you to recommend this service to other sellers?</li></h3>
+            <div class="radio-buttons-container col-md-12 col-sm-8 col-xs-12">
+              <input type="radio" name="recommendValue" value="1" id="one"><label class="col-md-1 col-sm-2 col-xs-1" for="one">1</label>
+              <input type="radio" name="recommendValue" value="2" id="two"><label class="col-md-1 col-sm-2 col-xs-1" for="two">2</label>
+              <input type="radio" name="recommendValue" value="3" id="three"><label class="col-md-1 col-sm-2 col-xs-1" for="three">3</label>
+              <input type="radio" name="recommendValue" value="4" id="four"><label class="col-md-1 col-sm-2 col-xs-1" for="four">4</label>
+              <input type="radio" name="recommendValue" value="5" id="five"><label class="col-md-1 col-sm-2 col-xs-1" for="five">5</label>
+              <input type="radio" name="recommendValue" value="6" id="six"><label class="col-md-1 col-sm-2 col-xs-1" for="six">6</label>
+              <input type="radio" name="recommendValue" value="7" id="seven"><label class="col-md-1 col-sm-2 col-xs-1" for="seven">7</label>
+              <input type="radio" name="recommendValue" value="8" id="eight"><label class="col-md-1 col-sm-2 col-xs-1" for="eight">8</label>
+              <input type="radio" name="recommendValue" value="9" id="nine"><label class="col-md-1 col-sm-2 col-xs-1" for="nine">9</label>
+              <input type="radio" name="recommendValue" value="10" id="ten"><label class="col-md-1 col-sm-2 col-xs-1" for="ten">10</label>
+            </div>
+
+            <div class="col-md-12 col-sm-8 col-xs-12 recommend-text-container">
+            <div class="col-md-1 col-sm-2 col-xs-4 recommend-text recommend-text-unlikely">
+              Not at all
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-5 recommend-text recommend-text-likely">
+              Extremely likely
+            </div>
+          </div>
+          </div>
+
+          
+
+        </div>
+      </ol>
+      <div class="col-md-10 col-sm-10 col-xs-10 submit-button-container">
+        <input type="submit" name="btnSubmit" class="btn" value="Submit Survey">
+      </div>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      
+      $(".radio-buttons-container label").click(function () {
+        $(".radio-buttons-container label").css("background-color","transparent");
+        $(this).css("background-color","#f5962a");
+      });
+
+
+      $(".yes-no-question-container1 label").click(function () {
+        $(".yes-no-question-container1 label").css("background-color","#ccc");
+        $(this).css("background-color","#f5962a");
+      });
+
+      $(".yes-no-question-container2 label").click(function () {
+        $(".yes-no-question-container2 label").css("background-color","#ccc");
+        $(this).css("background-color","#f5962a");
+      }); 
+
+      $(".submit-button-container input").click(function () {
+        $(this).css("background-color","#f5962a");
+      });     
+
+    </script>
+  </body>
+  </html>
