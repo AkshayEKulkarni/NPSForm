@@ -17,8 +17,7 @@
   <body>
     <div class="navbar navbar-default">
          <div class="container col-md-12 col-sm-12 col-xs-12">
-            <a href="#">
-              <li class="logo"></li>
+            <a class="logo" href="#">
             </a>
         </div>
     </div>
@@ -32,25 +31,25 @@
     </div>
 
     <div class="container">
-      <form action="#">
-      <ol class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-
+      
+      <div class="row">
+        
+      	<form>
           <div class="col-md-12 col-sm-12 col-xs-12 yes-no-question-container yes-no-question-container1">
-            <h3><li>Has your account manager from Prione Business services contacted you?</li></h3>
+            <h3>1. Has your account manager from Prione Business services contacted you?</h3>
             <input type="radio" name="contacted" value="yes" id="yes"><label for="yes">Yes</label>
             <input type="radio" name="contacted" value="no" id="no"><label for="no">No</label>
           </div>
 
           <div class="col-md-12 col-sm-12 col-xs-12 yes-no-question-container yes-no-question-container2">
-            <h3><li>Are you happy with the service?</li></h3>
+            <h3>2. Are you happy with the service?</h3>
             <input type="radio" name="happy" value="yes" id="yes1"><label for="yes1">Yes</label>
             <input type="radio" name="happy" value="no" id="no1"><label for="no1">No</label>
           </div>
 
           <div class="col-md-12 col-sm-12 col-xs-12 recommend">
-            <h3><li>How likely are you to recommend this service to other sellers?</li></h3>
-            <div class="radio-buttons-container col-md-12 col-sm-8 col-xs-12">
+            <h3>3. How likely are you to recommend this service to other sellers?</h3>
+            <div class="radio-buttons-container col-md-12 col-sm-12 col-xs-12">
               <input type="radio" name="recommendValue" value="1" id="one"><label class="col-md-1 col-sm-2 col-xs-1" for="one">1</label>
               <input type="radio" name="recommendValue" value="2" id="two"><label class="col-md-1 col-sm-2 col-xs-1" for="two">2</label>
               <input type="radio" name="recommendValue" value="3" id="three"><label class="col-md-1 col-sm-2 col-xs-1" for="three">3</label>
@@ -63,7 +62,7 @@
               <input type="radio" name="recommendValue" value="10" id="ten"><label class="col-md-1 col-sm-2 col-xs-1" for="ten">10</label>
             </div>
 
-            <div class="col-md-12 col-sm-8 col-xs-12 recommend-text-container">
+            <div class="col-md-12 col-sm-12 col-xs-12 recommend-text-container">
             <div class="col-md-1 col-sm-2 col-xs-4 recommend-text recommend-text-unlikely">
               Not at all
             </div>
@@ -73,14 +72,19 @@
           </div>
           </div>
 
-          
+          <div class="col-md-12 col-sm-12 col-xs-12 suggestion-container">
+          	<h3 class="col-md-12 col-sm-12 col-xs-12">4. Suggestion if any</h3>
+          	<textarea placeholder="How we can improve?"></textarea>
+          </div>
 
-        </div>
-      </ol>
-      <div class="col-md-10 col-sm-10 col-xs-10 submit-button-container">
+        
+
+      <div class="col-md-10 col-sm-10 col-xs-12 submit-button-container">
         <input type="submit" name="btnSubmit" class="btn" value="Submit Survey">
       </div>
-      </form>
+  </form>
+  </div>
+      
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
